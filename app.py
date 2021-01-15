@@ -57,7 +57,7 @@ async def on_ready():
     print('---------------------')
     activity = discord.Game(name=f"{PREF}help")
     await bot.change_presence(status=discord.Status.online, activity=activity)
-    files = listdir('C:\pythonProject\Discord_bot\COG_BOT\cogs')
+    files = listdir('cogs')
     for n in files:
         if n != '__pycache__':
             if not '#' in n:
